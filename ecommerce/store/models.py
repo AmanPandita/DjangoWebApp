@@ -60,7 +60,7 @@ class Order(models.Model):
         for i in orderitems:
             if i.product.digital == False:
                     shipping = True
-        return self._shipping
+        return shipping
 
     
 
@@ -82,6 +82,7 @@ class Shipping(models.Model):
     order = models.ForeignKey(Order, on_delete = models.SET_NULL, blank = True, null = True)
     address = models.CharField(max_length=200, null = True)
     city = models.CharField(max_length=200, null = True)
+    state = models.CharField(default='', max_length=200, null=False)
     zipcode = models.CharField(max_length=200, null = True)
     date_added = models.DateTimeField(auto_now_add= True)
 
