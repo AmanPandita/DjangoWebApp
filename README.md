@@ -98,3 +98,7 @@ We appreciate any contributions to improve the project. If you'd like to contrib
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+## Author
+
+Aman Pandita
